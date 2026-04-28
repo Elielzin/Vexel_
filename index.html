@@ -1,14 +1,120 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EngTech</title>
+    <title>Vexel Automata & Co. | Engenharia de Precisão</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="home">
 
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">Vexel Automata</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="nav-links">
+                    <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#historia">História</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="d-flex align-items-center justify-content-center">
+        <div class="container text-center text-white">
+            <h1 class="display-1 fw-bold">Vexel Automata & Co.</h1>
+            <h3 class="text-uppercase ls-5">Engenharia de Precisão para um Mundo em Movimento</h3>
+        </div>
     </section>
+
+    <section class="sobre py-5" id="sobre">
+        <div class="container text-center">
+            <h2 class="mb-4">Quem somos?</h2>
+            <p class="lead">
+                A Vexel Automata é uma integradora de soluções tecnológicas focada na transição para a manufatura inteligente. 
+                Atuamos na interseção entre o hardware industrial e o software de alta performance.
+            </p>
+        </div>
+    </section>
+
+    <section class="servicos py-5 bg-light" id="servicos">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-uppercase">Portfólio de Serviços</h2>
+                <p class="text-muted">Focamos nos benefícios e na inovação técnica para o seu negócio.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="cards h-100 shadow-sm border-0">
+                        <img src="img/fundo-posts-2.jpg" class="card-img-top" alt="Robótica">
+                        <div class="info p-3">
+                            <h3>Integração Robótica</h3>
+                            <p>Projetamos e implementamos braços robóticos e sistemas colaborativos...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="cards h-100 shadow-sm border-0">
+                        <img src="img/bigstock-Omni-Channel-Technology-Of-Onl-336037885.jpg" class="card-img-top" alt="IoT">
+                        <div class="info p-3">
+                            <h3>Ecossistemas IoT</h3>
+                            <p>Conectamos seu chão de fábrica à nuvem com dashboards em tempo real...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="cards h-100 shadow-sm border-0">
+                        <img src="img/110633202310116526abe969302.jpg" class="card-img-top" alt="IA">
+                        <div class="info p-3">
+                            <h3>Manutenção com IA</h3>
+                            <p>Utilizamos algoritmos de aprendizado de máquina para prever falhas operacionais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="cards h-100 shadow-sm border-0">
+                        <img src="img/tecnologia-e-inovacao.jpg" class="card-img-top" alt="Retrofitting">
+                        <div class="info p-3">
+                            <h3>Sistemas Legados</h3>
+                            <p>Modernizamos sua maquinaria antiga para a era digital com baixo investimento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="historia py-5" id="historia">
+        <div class="container text-center">
+            <h2 class="mb-4">A Fundação da Vexel</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p>Fundada por especialistas em engenharia de software e automação, surgimos com a missão de democratizar o acesso à tecnologia de ponta.</p>
+                    <p>Hoje, somos reconhecidos pela capacidade de resolver problemas complexos com simplicidade técnica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="formulario py-5">
+        <div class="container text-center">
+            <h3 class="mb-4">Pronto para o próximo passo?</h3>
+            <button type="button" class="button">Agendar Consultoria técnica</button>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

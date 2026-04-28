@@ -1,0 +1,156 @@
+/* --- Configurações Globais --- */
+html {
+    scroll-behavior: smooth; /* Deslize suave ao clicar nos links do menu */
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #333;
+    overflow-x: hidden; /* Evita barra de rolagem horizontal indesejada */
+}
+
+/* --- Navbar Personalizada --- */
+#navbar {
+    background-color: #001f3f; /* Midnight Blue original */
+    padding: 15px 0;
+    transition: background 0.3s ease;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#nav-links a {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+#nav-links a:hover {
+    color: #ff0000 !important; /* Destaque em vermelho */
+}
+
+/* --- Hero Section (Home) --- */
+#home {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url('img/ti.jpg') !important; /* Adicione o !important */
+    background-size: cover !important;
+    background-position: center !important;
+    height: 90vh;
+    position: relative;
+}
+
+/* Efeito de transição suave para a seção de baixo */
+#home::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, #ffffff);
+}
+
+#home h1 {
+    font-family: Georgia, serif;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+}
+
+.ls-5 {
+    letter-spacing: 5px;
+    color: #5f9ea0; /* Cadet Blue original */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Seção Sobre --- */
+.sobre h2 {
+    position: relative;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+.sobre h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #ff0000;
+}
+
+/* --- Cards de Serviços (Personalização do Bootstrap) --- */
+.cards {
+    transition: all 0.3s ease;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.cards:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+.cards img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.info h3 {
+    font-size: 1.2rem;
+    color: #001f3f;
+    margin-bottom: 10px;
+}
+
+/* --- Seção História --- */
+.historia h2 {
+    color: #1a1a1a;
+    letter-spacing: 2px;
+}
+
+.historia p {
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+/* --- Rodapé / Botão --- */
+.formulario {
+    background-color: #111;
+    color: white;
+}
+
+.button {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+}
+
+/* --- Ajustes de Responsividade Extra --- */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    .ls-5 {
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+    }
+}
